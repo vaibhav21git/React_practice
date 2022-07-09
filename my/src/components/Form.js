@@ -1,17 +1,20 @@
 import React from 'react'
 import './Form.css'
-import {useState} from 'react'
+
 
 function Form(props) {
 
-const [entry , setentry] = useState({});
+// const [entry , setentry] = useState({});
 
-  function handlesubmit(event)
-  {
-    event.preventDefault();
-     props.addon(entry);
-     
-  }
+let entry = [];
+
+
+function handlesubmit(event)
+{
+  event.preventDefault();
+   props.addon(entry);
+   
+}
 
   function handleonchange1(event)
   {
@@ -25,6 +28,7 @@ const [entry , setentry] = useState({});
      entry.age = event.target.value;
      console.log(entry.age);
   }
+
 
   return (<>
     <form className='form1'>

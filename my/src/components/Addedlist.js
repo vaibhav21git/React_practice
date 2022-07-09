@@ -12,7 +12,7 @@ function Addedlist(props) {
 
   for(let  i  = 0 ;i<arr.length ; i++)
   {
-     array.push({name : arr[i].name , age : arr[i].age  , key : Math.random()*1000})
+     array.push({name : arr[i].name , age : arr[i].age  , key : Math.random()*100000})
   }
 
 
