@@ -1,9 +1,10 @@
 import React from 'react'
 import './Form.css'
+import {useState} from 'react'
 
 function Form(props) {
 
-let entry = {name :"" ,age: 0};
+const [entry , setentry] = useState({});
 
   function handlesubmit(event)
   {
